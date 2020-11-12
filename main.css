@@ -1,0 +1,20 @@
+.services {
+    /* margin: 0 20px; */
+    text-align: center;
+    padding: 15px;
+
+}
+
+.offer {
+    background-color: rgba(0, 128, 201, .7);
+    border: 1px black;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.offer i {
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #ffe500;
+}

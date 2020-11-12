@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 1980px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto;
+    position: relative;
+    width: 360px;
+    min-width: 320px;
+    max-width: 360px;
+    overflow: hidden;
+}
+
+@media (min-width: 640px) {
+    header {
+        width: 640px;
+        min-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 768px;
+        min-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        width: 90%;
+        min-width: 1024px;
+        max-width: 1980px;
+    }
+}
+
+
+.img {
+    height: 40vh;
+    opacity: 0.8;
+    background-image: url(/img/color.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 640px) {
+    .img {
+        height: 50vh;
+    }
+}
+
+button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: #ffe500;
+    color: black;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    animation: button 1s linear both;
+}
+
+@media (min-width: 768px) {
+    button {
+        right: 30px;
+        bottom: 30px;
+        font-size: 2.1rem;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    button {
+        right: 20px;
+        bottom: 20px;
+        transition: .5s;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: logo 1s linear;
+}
+
+.logo img {
+    margin: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+@media (min-width: 640px) {
+    .logo img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo img {
+        width: 30%;
+    }
+}
+
+@keyframes logo {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes button {
+    0% {
+        bottom: -100px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+}
