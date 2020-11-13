@@ -1,18 +1,28 @@
 .services {
-    text-align: center;
+    margin: 0 auto;
     padding: 15px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .services {
+        flex-direction: row;
+    }
 }
 
 .offer {
-    background-color: rgba(0, 128, 201, .7);
+    background-color: rgba(0, 128, 201, 0.502);
     border: 1px black;
     border-radius: 10px;
     margin: 10px;
     display: flex;
     padding: 15px;
     text-align: center;
+    height: 300px;
 }
 
 .offer h1 {
@@ -29,6 +39,83 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.offer i {
+    color: #403900;
+    font-size: 3rem;
+}
+
 .offer p {
     font-size: 1.8rem;
+}
+
+.adres {
+    text-align: center;
+}
+
+iframe {
+    width: 90%;
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.contact h1 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: rgba(0, 126, 199, 0.502);
+    padding: 15px;
+    color: #ffe500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-bottom: 15px;
+}
+
+.seat {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.seat h2 {
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.seat img {
+    width: 90%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007ec7;
+    font-weight: bold;
+}
+
+.icons-contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .icons-contact {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+}
+
+.icon {
+    margin-bottom: 25px;
+}
+
+.icon img {
+    width: 40%;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
