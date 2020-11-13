@@ -11,6 +11,15 @@
 @media (min-width: 1024px) {
     .services {
         flex-direction: row;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .services {
+        width: 100%;
+        justify-content: space-between;
     }
 }
 
@@ -23,6 +32,13 @@
     padding: 15px;
     text-align: center;
     height: 300px;
+    box-shadow: 2px 8px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1025px) {
+    .offer {
+        width: 30%;
+    }
 }
 
 .offer h1 {
@@ -68,7 +84,8 @@ iframe {
     padding: 15px;
     color: #ffe500;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    box-shadow: 2px 8px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
 .seat {
@@ -115,7 +132,21 @@ a {
 }
 
 .icon img {
-    width: 40%;
+    width: 20%;
     margin-bottom: 0;
     margin-top: 10px;
+}
+
+@media (min-width: 533px) {
+    .icon img {
+        width: 15%;
+    }
+}
+
+@media (min-width: 640px) {
+    .icon img {
+        width: 30%;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
 }

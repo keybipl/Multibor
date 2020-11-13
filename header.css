@@ -36,7 +36,7 @@ header {
     animation: color 3s linear both;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 533px) {
     .img {
         height: 50vh;
     }
