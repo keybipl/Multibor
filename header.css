@@ -26,7 +26,7 @@ header {
 
 
 .img {
-    height: 40vh;
+    height: 60vh;
     opacity: 0.8;
     background-image: url(/img/color.jpg);
     background-size: cover;
@@ -36,34 +36,44 @@ header {
 
 @media (min-width: 533px) {
     .img {
-        height: 50vh;
+        height: 100vh;
     }
 }
 
 @media (min-width: 768px) {
     .img {
-        height: 30vh;
+        height: 50vh;
+        text-align: center;
     }
 }
 
-button {
+@media (min-width: 769px) {
+    .img {
+        height: 40vh;
+        text-align: center;
+    }
+}
+
+.img div {
     position: absolute;
+    border-radius: 12px;
     right: 10px;
     bottom: 10px;
     text-transform: uppercase;
-    padding: 5px;
-    background-color: #ffe500;
+    padding: 15px;
+    background-color: rgba(255, 229, 0, 0.8);
     color: black;
-    border: 1px solid black;
+    /* border: 1px solid #0080C9; */
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
     font-weight: bold;
+    text-align: center;
     animation: button 2s linear both;
 }
 
 @media (min-width: 768px) {
-    button {
+    .img div {
         right: 30px;
         bottom: 30px;
         font-size: 2.1rem;
@@ -72,11 +82,46 @@ button {
 }
 
 @media (min-width: 1024px) {
-    button {
+    .img div {
         right: 20px;
         bottom: 20px;
         transition: .5s;
     }
+}
+
+.img div h2 {
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.img div p {
+    text-transform: none;
+}
+
+.img div p:nth-of-type(3) {
+    margin-top: 15px;
+}
+
+.img div p:nth-of-type(4) {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.img div p:nth-of-type(3),
+.img div p:nth-of-type(4) {
+    text-align: left;
+}
+
+.img div p:nth-of-type(5) {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+
+.img div p i {
+    margin-right: 10px;
+    color: #0080C9;
+    font-size: 2rem;
 }
 
 .logo {
@@ -90,6 +135,17 @@ button {
     margin: 10px;
     width: 70%;
     border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007ec7;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+a:hover {
+    color: black
 }
 
 @media (min-width: 640px) {
@@ -123,7 +179,7 @@ button {
 
 @keyframes button {
     0% {
-        bottom: -100px;
+        bottom: -100%;
     }
 
     100% {

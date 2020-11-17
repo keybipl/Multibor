@@ -33,6 +33,7 @@
     text-align: center;
     height: 300px;
     box-shadow: 2px 8px 8px 0px rgba(0, 0, 0, 0.5);
+    display: none;
 }
 
 @media (min-width: 1025px) {
@@ -80,7 +81,7 @@ iframe {
     font-size: 2.4rem;
     letter-spacing: 2px;
     text-align: center;
-    background-color: rgba(0, 126, 199, 0.502);
+    background-color: #0080C9;
     padding: 15px;
     color: #ffe500;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -94,6 +95,7 @@ iframe {
     font-size: 1.8rem;
     line-height: 150%;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .seat h2 {
@@ -107,11 +109,7 @@ iframe {
     border-radius: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: #007ec7;
-    font-weight: bold;
-}
+
 
 .icons-contact {
     font-family: 'Montserrat', sans-serif;
