@@ -2,4 +2,15 @@ footer {
     text-align: right;
     height: 20px;
     padding: 10px;
+    font-size: 1.4rem;
+}
+
+.created {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.created p:nth-of-type(1) a:hover {
+    color: black
 }
